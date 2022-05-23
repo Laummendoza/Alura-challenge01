@@ -1,3 +1,115 @@
 body {
-	background-color: #f3f5fc;
+	background: #f3f5fc;
+}
+header {
+	height: 10%;
+}
+img {
+	border-radius: 50%;
+	margin-left: 15px;
+	margin-top: 15px;
+	max-width: 40px;
+}
+
+.input-texto {
+	position: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 90px;
+}
+input {
+	width: 343px;
+	height: 50%;
+	text-align: center;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	border: 0;
+	border-radius: 10px;
+	background: #f3f5fc;
+}
+input:focus {
+	background: #fafafa;
+	outline: none;
+}
+
+::placeholder {
+	color: #495057;
+}
+
+.botones {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+
+	margin-top: 100px;
+}
+
+p {
+	font-family: "Inter";
+	color: #495057;
+	font-size: 12px;
+}
+.encriptador {
+	height: 50px;
+	width: 340px;
+	left: 0px;
+	top: 0px;
+	border-radius: 24px;
+	background-color: #0a3871;
+	color: #f3f5fc;
+	text-align: center;
+	border: 0;
+}
+
+.desencriptador {
+	height: 50px;
+	width: 340px;
+	left: 0px;
+	margin-top: 20px;
+	border-radius: 24px;
+	background-color: #0a3871;
+	color: #f3f5fc;
+	text-align: center;
+	border: 0;
+}
+
+.area-de-texto {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+textarea {
+	width: 327px;
+	min-height: 150px;
+	margin-top: 20px;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	text-align: center;
+	border: 0;
+	font-family: "Inter";
+}
+
+textarea::placeholder {
+	font-weight: bold;
+}
+
+.boton-copiar {
+	position: relative;
+	width: 50px;
+	left: 0px;
+	margin-top: 10px;
+	border-radius: 24px;
+	background-color: #0a3871;
+	color: #f3f5fc;
+	text-align: center;
+	border: 0;
 }
