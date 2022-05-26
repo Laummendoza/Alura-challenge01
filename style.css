@@ -104,7 +104,7 @@ p {
 }
 
 textarea {
-	width: 22%;
+	min-width: 22%;
 	min-width: 4rem;
 	height: 3rem;
 	margin-top: 20px;
@@ -122,7 +122,6 @@ textarea::placeholder {
 }
 
 .boton-copiar {
-	width: 15%;
 	margin: auto;
 	padding-top: 20px;
 	padding-left: 80px;
