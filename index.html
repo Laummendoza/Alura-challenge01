@@ -8,7 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300;400&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Open+Sans:wght@300;400&display=swap"
 			rel="stylesheet"
 		/>
 		<script
@@ -21,9 +21,14 @@
 		<header>
 			<img src="images/logo.jpg" alt="logo-Alura" />
 		</header>
-		<main>
+
+		<section>
 			<div class="input-texto">
-				<input type="text" id="texto" placeholder="Ingrese el texto aqui" />
+				<input
+					type="text"
+					id="input-text"
+					placeholder="Ingrese el texto aqui"
+				/>
 				<!-- <input type="submit" /> -->
 			</div>
 
@@ -32,23 +37,44 @@
 					<img src="Images/Vector.png" alt="" /> solo letras minusculas y sin
 					acentos
 				</p>
-				<button class="encriptador">Encriptar</button>
-				<button class="desencriptador">Desencriptar</button>
+
+				<button type="button" class="btn-encriptador" onclick="btnEncriptar()">
+					Encriptar
+				</button>
+				<button
+					type="button"
+					class="btn-desencriptador"
+					onclick="btnDesencriptar()"
+				>
+					Desencriptar
+				</button>
 			</div>
-		</main>
-		<div class="area-de-texto">
-			<textarea
-				name=""
-				id=""
-				cols="40"
-				rows="2"
-				placeholder="
-Ningun mensaje fue encontrado.
-				
-				
-Ingrese el texto que desea encpritar o desencriptar"
-			></textarea>
-			<button class="boton-copiar">Copiar</button>
-		</div>
+		</section>
+
+		<section>
+			<div class="sinTextoEncriptado">
+				<h1>Ningun mensaje fue encontrado</h1>
+				<h2>Ingresa el texto que deseas encriptar o desencriptar</h2>
+			</div>
+			<div class="textoEncriptado">
+				<textarea
+					type="text"
+					class="textArea"
+					name=""
+					id="texto-encriptado"
+					cols="40"
+					rows="2"
+				>
+				</textarea>
+				<button class="boton-copiar" onclick="copiarTexto()">Copiar</button>
+			</div>
+		</section>
 	</body>
+
+	<footer>
+		<p class="copyright">
+			&copy Copyright Laura Mendoza - Alura-Latam Challenge 01 - 2022
+		</p>
+	</footer>
+	<script src="script.js"></script>
 </html>
